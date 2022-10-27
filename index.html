@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <h5 class="heading">Currency Convert</h5>
+    <div class="wrapper">
+      <p>exchange rate</p>
+      <p id="rate">0</p>
+      <label for="amount">amount</label>
+      <input type="text" id="amount" value="0" />
+      <div class="fromto">
+        <div class="from">
+          <label for="">from</label>
+          <div class="select" id="from">
+            <img src="https://countryflagsapi.com/png/us" alt="" />
+            <span>USD</span>
+            <i class="fa-solid fa-caret-down"></i>
+            <!-- we will add option through javascript -->
+            <ul>
+              <li>
+                <img src="https://countryflagsapi.com/png/us" alt="" />
+                <span>USD</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <i id="convert-icon" class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="to">
+          <label for="">to</label>
+          <div class="select" id="to">
+            <img src="https://countryflagsapi.com/png/us" alt="" />
+            <span>USD</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <button class="convert-btn">convert</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
