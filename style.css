@@ -172,3 +172,12 @@ body {
   background-color: #a8a8a8;
   cursor: not-allowed;
 }
+.credits {
+  text-align: center;
+  font-size: 12px;
+  color: #c2c2c2;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
